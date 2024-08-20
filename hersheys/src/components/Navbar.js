@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav1">
-                <Link className="nav-link dropdown-toggle" to="/Home">Home</Link>    
+                <Link className="nav-link dropdown-toggle" to="/">Home</Link>    
             </li>
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" to="/chocalates">Chocalates</Link>    
@@ -21,7 +21,7 @@ const Navbar = () => {
                 <Link className="nav-link dropdown-toggle" to="/cakes">Cakes</Link>    
             </li>
             <li className="nav-item dropdown">
-                <Link className="nav-link dropdown-toggle" to="/Gifts">Gifts</Link>    
+                <Link className="nav-link dropdown-toggle" to="/gifts">Gifts</Link>    
             </li>                   
           </ul>
         <form className="d-flex" role="search">

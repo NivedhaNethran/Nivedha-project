@@ -1,17 +1,20 @@
 import React from 'react'
 import './Cakes.css';
 import cake from '../images/cake.jpg'
-import pict1from '../images/pict1.png'
-import 
+import pict1 from '../images/pict1.png'
+import pict2 from '../images/pict2.jpeg'
+import pict3 from '../images/pict3.jpg'
+
 
 const Cakes = () => {
   return (
 <>
-  <div className="container">
+<section className='bcg1'>
+  <div className="container key">
       <div className="row">
         <div className="col-lg-6">
           <div className="card as">
-            <img src="images/cake.jpg" class="card-img-top" alt="..."/>
+            <img src={cake} class="card-img-top" alt="..."/>
             <div className="card-body yy">Chocolate Peanut Butter milkshake
             </div>
           </div>
@@ -20,7 +23,7 @@ const Cakes = () => {
           <div className="card mb-3" >
             <div className="row g-0">
               <div className="col-md-4">
-                <img src="images/pict1.png" class="img-fluid rounded-start" alt="..."/>
+                <img src={pict1} class="img-fluid rounded-start" alt="..."/>
               </div>
               <div className="col-md-8">
                 <div className="card-body">
@@ -32,7 +35,7 @@ const Cakes = () => {
           <div className="card mb-3">
             <div className="row g-0">
               <div className="col-md-4">
-                <img src="images/pict2.jpeg" class="img-fluid rounded-start" alt="..."/>
+                <img src={pict2} class="img-fluid rounded-start" alt="..."/>
               </div>
               <div className="col-md-8">
                 <div className="card-body">
@@ -41,10 +44,10 @@ const Cakes = () => {
               </div>
             </div>
           </div>
-          <div className="card mb-3" style="max-width: 540px;">
+          <div className="card mb-3" >
             <div className="row g-0">
               <div className="col-md-4">
-                <img src="images/pict3.jpg" class="img-fluid rounded-start" alt="..."/>
+                <img src={pict3} class="img-fluid rounded-start" alt="..."/>
               </div>
               <div className="col-md-8">
                 <div className="card-body">
@@ -56,9 +59,8 @@ const Cakes = () => {
         </div>
       </div>
     </div>
-         
-      
-    </>
+    </section>
+        </>
   )
 }
 

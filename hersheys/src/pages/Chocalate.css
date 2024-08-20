@@ -1,7 +1,10 @@
 .bgc1{
         background-color:blueviolet;
 }
-
+.rw{
+    display: flex;
+    gap:20px;
+}
 .im{
         font-size: 20px; 
         margin-top: 30px; 
@@ -25,7 +28,8 @@
     }
     .is{
         font-size: 20px; 
-        margin-top: 30px;  
+        margin-top: 30px; 
+        padding-top: 40px;  
     }
     .gh:hover{
         transform: scale(1.06);
@@ -35,10 +39,6 @@
         transform: scale(1.06);
         transition: all 1s;
     }
-    .gh{
-       margin-top: 50px;
-       margin-left: 30px;
-    }
     .gh2:hover{
         transform: scale(1.06);
         transition: all 1s;
@@ -47,7 +47,12 @@
         transform: scale(1.06);
         transition: all 1s;
     }
-    .rw{
-        display: flex;
-        gap:20px;
+    .bd{
+        background-color: brown;
+        color:white;
     }
+.gh {
+    padding-top: -100px;
+}
+    
+  

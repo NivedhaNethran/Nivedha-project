@@ -1,0 +1,120 @@
+.bcg{
+    background-color: bisque;
+}
+
+.sweet{
+        color:white;
+        text-align: left;
+        padding-left: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size:40px;
+
+    }
+.pot{
+        margin-left:60px;
+    }
+.qq{
+    background-image: url("../images/cap1.jpg");
+    height:300px;
+    width:350px;
+    margin-bottom: 50px;
+}
+.gh{
+    margin-top: 180px;
+    opacity:0.9;
+    background-color:white;
+    margin-left: 30px;
+    }
+.qq:hover{
+    transform: scale(1.06);
+    transition: all 3s;
+}
+.aa{
+    background-image: url("../images/cap2.jpg");
+    height:300px;
+    width:350px;
+    margin-left: 50px;
+}
+.jk{
+    margin-top: 180px;
+    opacity:0.9;
+    background-color:white;
+    margin-left: 30px;
+}
+.aa:hover{
+    transform: scale(1.06);
+    transition: all 3s;
+}
+.zz{
+    background-image: url("../images/cap3.jpg");
+    height:300px;
+    width:350px; 
+    margin-left: 50px;
+}
+.kl{
+
+    margin-top: 180px;
+    opacity:0.9;
+    background-color:white;
+    margin-left: 30px;
+}
+.zz:hover{
+    transform: scale(1.06);
+    transition: all 3s;
+}
+.sen
+{
+    text-align: center;
+    color:darkred;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Gupter", serif;
+    }  
+.sen1{
+    text-align:center;
+    font-weight:600;
+    color:darkred;
+    padding:10px 70px 10px 70px;
+    font-size:20px;
+}
+.pic img{
+    width:1348px;
+}
+.para{
+    padding-top: 40px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+.tot{
+    background-color:darkred;
+}
+.cml img{
+    width:600px;
+    height:400px;
+    padding-left: 100px;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+.box{
+    font-size:20px;
+    margin-top: 50px;
+  background-color: blue;
+  color:white;
+  border-radius: 30px;
+}
+.sweet{
+    color:darkblue;
+    text-align: left;
+    padding-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:40px;
+}
+.ssent{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    padding-top: 50px;
+    }
