@@ -1,0 +1,49 @@
+.bgc{
+        background-color:cadetblue;
+}
+.in{
+        font-size: 20px;
+        margin-top: 30px; 
+        padding-top: 40px; 
+    }
+    .cd:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .cd1:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .cd2:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .cd3:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .rw{
+        display: flex;
+        gap:20px;
+    }
+    .it{
+        font-size: 20px;
+        margin-top: 30px;
+        padding-bottom: 40px; 
+    }
+    .ef:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .ef1:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .ef2:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .ef3:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }

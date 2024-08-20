@@ -1,0 +1,53 @@
+.bgc1{
+        background-color:blueviolet;
+}
+
+.im{
+        font-size: 20px; 
+        margin-top: 30px; 
+        padding-top: 40px;  
+    }
+    .ab:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .ab1:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .ab2:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .ab3:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .is{
+        font-size: 20px; 
+        margin-top: 30px;  
+    }
+    .gh:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .gh1:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .gh{
+       margin-top: 50px;
+       margin-left: 30px;
+    }
+    .gh2:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .gh3:hover{
+        transform: scale(1.06);
+        transition: all 1s;
+    }
+    .rw{
+        display: flex;
+        gap:20px;
+    }

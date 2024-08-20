@@ -1,0 +1,49 @@
+.footer{
+        display:flex;
+        height:30px;
+        background-color: maroon;
+        margin-top:20px;
+        color:white;
+        padding-left: 20px;   
+}
+.list ul li{
+        list-style: none;
+        display:inline;
+        margin-right:30px;
+        font-size:15px;
+}
+
+.dj{
+        margin-top: 30px;
+}
+.io{
+        font-size: 20px;
+        padding-left: 40px;
+        padding-top: 30px;
+}
+.king p{
+        color:blue;
+        font-size:15px;
+       text-decoration: underline;
+}
+.kg p{
+        color:blue;
+        font-size:15px;
+        text-decoration: underline;
+}
+.hat{
+        font-family: 'Times New Roman', Times, serif;
+}
+.hat p{
+     font-size: 20px;
+}
+.blue{
+        background-color: blueviolet;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color:white;
+}
+.cap img{
+        width:1348px;
+    
+}
