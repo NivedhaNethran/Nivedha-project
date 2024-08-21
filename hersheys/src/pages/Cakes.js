@@ -10,6 +10,11 @@ const Cakes = () => {
   return (
 <>
 <section className='bcg1'>
+<div className="bake"><h2>Bake Your Day Brighter</h2><p><h6>From brunch to birthdays and every 
+        after-dinner dessert in between, explore the sweetest Hershey's  dessert recipes for your family to enjoy</h6></p></div>
+        <form className="d-flex" role="search">
+          <input className="form-control me-2 ind" type="search" placeholder="Search by receipe keyword,type or ingredient" aria-label="Search"/>
+        </form>
   <div className="container key">
       <div className="row">
         <div className="col-lg-6">

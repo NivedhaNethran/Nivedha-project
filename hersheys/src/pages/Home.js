@@ -5,7 +5,7 @@ import caramel from '../images/caramel.jpg'
 import k1 from '../images/k1.jpeg'
 import k2 from '../images/k2.jpeg'
 import k3 from '../images/k3.jpeg'
-import k4 from '../images/k4.gif'
+
 
 const Home = () => {
   return (
@@ -55,23 +55,19 @@ const Home = () => {
       </div>
     </div>
     <div class="ssent">Still Scrolling? Try One of These!</div>  
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           <img src={k1} alt=""/>
           <p class="pic"><u>GET BAKING TIPS AND TRICKS</u></p>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           <img src={k2} alt=""/>
           <p class="pic"><u>SEE ACTIVITES,GIFTS AND MORE</u></p>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           <img src={k3} alt=""/>
-          <p class="pic"><u>EXPLORE HARSHEY BRANDS6</u></p>
-        </div>
-        <div class="col-lg-3 ry">
-          <img src={k4} alt=""/>
-          <p class="pic"><u>EXPLORE HARSHEY BRANDS6</u></p>
+          <p class="pic"><u>ABOUT</u></p>
         </div>
       </div>
     </div>

@@ -9,3 +9,21 @@
 .bcg1{
     background-color:crimson;
 }
+.bake{
+    color:white;
+  padding-top: 100px;
+  text-align: center;
+  color:indigo;
+}
+.bake h2{
+    font-size: 50px;
+}
+.bake h6{
+    font-size: 25px;
+
+}
+.ind{
+    width:450px;
+    margin-left: 480px;
+    margin-bottom: 50px;
+}
