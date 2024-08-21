@@ -8,6 +8,9 @@ import york1 from '../images/york1.webp'
 import york2 from '../images/york2.webp'
 import york3 from '../images/york3.webp'
 import york4 from '../images/york4.webp'
+import Chproduct from '../products/Chproduct';
+
+
 
 
 const Chocalate = () => {
@@ -15,16 +18,21 @@ const Chocalate = () => {
     <>
     <section className='bgc1'>
 <div className="container im">
-<div className="rw">
+<div className="row">
+      {Chproduct.map((item)=>(
         <div className="col-lg-3 ab">
-            <div className="card">
-                <img src={york1} className="card-img-top" alt="..."/>
+            <div className="card" key={item.id}>
+                <img src={item.image} className="card-img-top" alt="..."/>
                 <div className="card-body bd">
-                  <p className="card-text">HERSHEY'S Zero Sugar Chocalate candy bar</p>
+                  <p className="card-text">{item.title}</p>
+                  <p className="card-text">{item.des}</p>
+                  <p className="card-text">{item.price}</p>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
         </div>
-        <div className="col-lg-3 ab1">
+        ))}
+        {/* <div className="col-lg-3 ab1">
             <div className="card">
                 <img src={york2} className="card-img-top" alt="..."/>
                 <div className="card-body bd">
@@ -47,10 +55,10 @@ const Chocalate = () => {
                   <p className="card-text">Crunchy peanut in Chocalate K size candy bar</p> 
                 </div>
               </div>
-        </div>
+        </div> */}
     </div>
 </div>
-<div className="container im">
+{/* <div className="container im">
 <div className="rw">
         <div className="col-lg-3 ab">
             <div className="card">
@@ -85,44 +93,9 @@ const Chocalate = () => {
               </div>
         </div>
     </div>
-</div>
-
-{/* <div className="container ">
-        <div className="rw">
-        <div className="col-lg-3 gh">
-        <div className="card">
-            <img src={york1} className="card-img-top" alt="..."/>
-            <div className="card-body bd">
-              <p className="card-text">Reeses White cream peanut Butter pumpkins 1.2oz</p> 
-            </div>
-            </div>   
-        </div>
-        <div className="col-lg-3 gh1">
-            <div className="card">
-            <img src={york2} className="card-img-top" alt="..."/>
-            <div className="card-body bd">
-              <p className="card-text">Reeses White cream peanut Butter pumpkins 1.2oz</p> 
-            </div>
-            </div>   
-        </div>
-        <div className="col-lg-3 gh2">
-            <div className="card" >
-            <img src={york3}className="card-img-top" alt="..."/>
-            <div className="card-body bd">
-              <p className="card-text">Reeses White cream peanut Butter snack size 9.6oz</p> 
-            </div>
-            </div>
-        </div>
-    <div className="col-lg-3 gh3">
-            <div className="card">
-            <img src={york4} className="card-img-top" alt="..."/>
-            <div className="card-body bd">
-              <p className="card-text">Reeses White cream peanut Butter cups 1.5oz</p> 
-            </div>
-          </div>
-    </div>
-</div>
 </div> */}
+
+
 </section>
 
     </>
