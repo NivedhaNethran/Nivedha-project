@@ -20,7 +20,7 @@ const Chproduct=[
         id:2,
         image:card2,
         title:"Blueberry pie",
-        des:"Cool, creamy blueberry tart",
+        des:"Cool, creamy blueberry,sweet,salty tart",
         quantity:1,
         price:850,
     },

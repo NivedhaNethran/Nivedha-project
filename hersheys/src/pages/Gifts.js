@@ -20,10 +20,10 @@ const Gifts = () => {
         <div className="col-lg-3 cd">
             <div className="card" key={item.id}>
                 <img src={item.image}class="card-img-top" alt="..."/>
-                <div className="card-body bd">
-                  <p className="card-text">{item.title}</p>
-                  <p className="card-text">{item.des}</p>
-                  <p className="card-text">{item.price}</p>
+                <div className="card-body num">
+                  <p className="card-text one">{item.title}</p>
+                  <p className="card-text two">{item.des}</p>
+                  <p className="card-text thr">{item.price}</p>
                   <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>

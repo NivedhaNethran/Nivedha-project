@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
 .bgc1{
         background-color:blueviolet;
 }
@@ -48,11 +49,24 @@
         transition: all 1s;
     }
     .bd{
-        background-color: brown;
-        color:white;
+        background-color:bisque;
+
     }
+  .hub{
+    color:crimson;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  .ef{
+    color:brown;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+  }
+  .nm{
+    color:navy;
+  }
 .gh {
     padding-top: -100px;
 }
-    
+ 
   

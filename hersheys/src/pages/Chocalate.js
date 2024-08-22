@@ -24,9 +24,9 @@ const Chocalate = () => {
             <div className="card" key={item.id}>
                 <img src={item.image} className="card-img-top" alt="..."/>
                 <div className="card-body bd">
-                  <p className="card-text">{item.title}</p>
-                  <p className="card-text">{item.des}</p>
-                  <p className="card-text">{item.price}</p>
+                  <p className="card-text hub">{item.title}</p>
+                  <p className="card-text ef">{item.des}</p>
+                  <p className="card-text nm">{item.price}</p>
                   <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
