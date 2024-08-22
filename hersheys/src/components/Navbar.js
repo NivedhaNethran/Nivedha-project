@@ -22,7 +22,10 @@ const Navbar = () => {
             </li>
             <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" to="/gifts">Gifts</Link>    
-            </li>                   
+            </li>  
+            <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle" to="/cart">Cart</Link>    
+            </li>                 
           </ul>
         <form className="d-flex" role="search">
           <input className="form-control me-2 sea" type="search" placeholder="Search tons of products,receipes and craft ideas" aria-label="Search"/>

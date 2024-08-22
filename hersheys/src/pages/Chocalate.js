@@ -9,11 +9,21 @@ import york2 from '../images/york2.webp'
 import york3 from '../images/york3.webp'
 import york4 from '../images/york4.webp'
 import Chproduct from '../products/Chproduct';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, deleteFromCart } from '../store/cartslice/Cartslice';
 
 
 
 const Chocalate = () => {
+const cartProducts=useSelector((state)=>state.cart.cartItems)
+const dispatch=useDispatch()
+const addcart=(item)=>{
+  dispatch(addToCart(item));
+}
+const deleteCart=(item)=>{
+  dispatch(deleteFromCart(item));
+}
+
   return (
     <>
     <section className='bgc1'>
@@ -27,7 +37,11 @@ const Chocalate = () => {
                   <p className="card-text hub">{item.title}</p>
                   <p className="card-text ef">{item.des}</p>
                   <p className="card-text nm">{item.price}</p>
-                  <button className='btn btn-primary'>Add to Cart</button>
+                  {cartProducts.find(items=>items.id===item.id)?
+                <button className='btn btn-danger' onClick={()=>deleteCart(item)}>Remove from Cart</button>:
+                <button className='btn btn-success' onClick={()=>addcart(item)}>Add to Cart</button>  
+                }
+                  {/* <button className='btn btn-primary'>Add to Cart</button> */}
                 </div>
               </div>
         </div>

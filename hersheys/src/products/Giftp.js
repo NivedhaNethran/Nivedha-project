@@ -20,7 +20,7 @@ const Giftp=[
         id:2,
         image:q2,
         title:"Choco sweety",
-        des:"Gift for those who are on-the-go. A delightful way to deliver seven of your favorite delectable",
+        des:"Gift for those who are on-the-go delightful way to deliver seven favorite delectable",
         quantity:1,
         price:400,
     }, 

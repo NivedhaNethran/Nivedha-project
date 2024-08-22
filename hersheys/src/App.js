@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Cakes from './pages/Cakes';
 import Chocalate from './pages/Chocalate';
 import Gifts from './pages/Gifts';
+import Cart from './pages/Cart';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
       <Route path='/cakes' element={<Cakes/>}/>
       <Route path='/chocalates' element={<Chocalate/>}/>
       <Route path='/gifts' element={<Gifts/>}/> 
-     
+      <Route path='/cart' element={<Cart/>}/>
+
      </Routes>
      <Footer/>
      </BrowserRouter>
