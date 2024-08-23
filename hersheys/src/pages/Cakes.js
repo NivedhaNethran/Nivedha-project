@@ -4,9 +4,25 @@ import cake from '../images/cake.jpg'
 import pict1 from '../images/pict1.png'
 import pict2 from '../images/pict2.jpeg'
 import pict3 from '../images/pict3.jpg'
-
+import cake1 from '../images/cake1.webp'
+import cake2 from '../images/cake2.webp'
+import cake3 from '../images/cake3.webp'
+import cake4 from '../images/cake4.webp'
+import { useDispatch, useSelector } from 'react-redux';
+import {  addToCart, deleteFromCart } from '../store/cartslice/Cartslice';
+import Cproduct from '../products/Cproduct';
 
 const Cakes = () => {
+ const cartProducts=useSelector((state)=>state.cart.cartItems)
+ const dispatch=useDispatch();
+ 
+ const addCart=(item)=>{
+  dispatch(addToCart(item))
+ }
+ const deleteCart=(item)=>{
+  dispatch(deleteFromCart(item));
+ }
+
   return (
 <>
 <section className='bcg1'>
@@ -64,8 +80,57 @@ const Cakes = () => {
         </div>
       </div>
     </div>
-    </section>
-        </>
+  <div className='container'>
+      <div className='row'>
+      {Cproduct.map((item)=>(
+      <div className='col-lg-3'>
+      <div className="card" key={item.id} >
+      <img src={item.image} class="card-img-top" alt="..."/>
+      <div className="card-body">
+      <h5 className="card-text">{item.title}</h5>
+      <p className="card-text">{item.des}</p>
+      <p className='card-text'>{item.price}</p>
+
+    
+    {cartProducts.find(items=>items.id === item.id)?
+      <button className='btn btn-danger' onClick={()=>deleteCart(item)}>Remove From Cart </button>:
+      <buttton className='btn btn-success' onClick={()=>addCart(item)}>Add to Cart</buttton>
+}
+      </div>
+      </div>
+   </div>
+      ))}
+  {/* <div className='col-lg-3'>
+    <div className="card" >
+    <img src={cake2} className="card-img-top" alt="..."/>
+    <div className="card-body">
+    <h5 className="card-title">Bluebery Cake</h5>
+    <p className="card-text">Ideal for all occasions specially for fruit lovers,A bonanza for those who like fruits.</p>
+    </div>
+    </div>
+  </div>
+  <div className='col-lg-3'>
+    <div className="card">
+    <img src={cake3} className="card-img-top" alt="..."/>
+    <div className="card-body">
+    <h5 className="card-title">Red Forest Cake</h5>
+    <p className="card-text">The Red Forest Cake is a decadent eggless celebration masterpiece.</p>
+    </div>
+    </div>         
+  </div>
+  <div className='col-lg-3'>
+    <div className="card">
+    <img src={cake4} className="card-img-top" alt="..."/>
+    <divclassName="card-body">
+    <h5 className="card-title">Rasamalai Cake</h5>
+    <p className="card-text"> sweet and indulgent treat, the Rasmalai Cake is a luxurious fusion.</p>
+    </div>
+    </div>
+  </div> */}
+</div>
+</div>
+</section>
+</>
   )
 }
 

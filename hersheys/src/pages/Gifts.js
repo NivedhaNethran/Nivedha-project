@@ -9,8 +9,18 @@ import cho2 from "../images/cho2.webp"
 import cho3 from "../images/cho3.avif"
 import cho4 from "../images/cho4.webp"
 import Giftp from '../products/Giftp';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, deleteFromCart } from '../store/cartslice/Cartslice';
 
 const Gifts = () => {
+  const cartProducts=useSelector((state)=>state.cart.cartItems)
+  const dispatch=useDispatch();
+  const addcart=(item)=>{
+    dispatch(addToCart(item));
+  }
+  const deleteCart=(item)=>{
+    dispatch(deleteFromCart(item));
+  }
   return (
     <>
 <section className='bgc'>
@@ -24,7 +34,11 @@ const Gifts = () => {
                   <p className="card-text one">{item.title}</p>
                   <p className="card-text two">{item.des}</p>
                   <p className="card-text thr">{item.price}</p>
-                  <button className='btn btn-primary'>Add to Cart</button>
+                  {cartProducts.find(items=>items.id===item.id)?
+                  <button className='btn btn-danger'onClick={()=>deleteCart(item)}>Remove From Cart</button>:
+                  <button className='btn btn-success'onClick={()=>addcart(item)}>Add to Cart</button>
+                  }
+                {/* <button className='btn btn-primary'>Add to Cart</button> */}
                 </div>
               </div>
         </div>

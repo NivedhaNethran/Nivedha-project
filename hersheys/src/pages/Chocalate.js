@@ -15,6 +15,7 @@ import { addToCart, deleteFromCart } from '../store/cartslice/Cartslice';
 
 
 const Chocalate = () => {
+
 const cartProducts=useSelector((state)=>state.cart.cartItems)
 const dispatch=useDispatch()
 const addcart=(item)=>{
