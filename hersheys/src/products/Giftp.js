@@ -9,7 +9,7 @@ import cho4 from "../images/cho4.webp"
 
 const Giftp=[
     {
-        id:1,
+        id:13,
         image:q1,
         title:"Nut tray",
         des:"Deliver a smorgasbord of candy, nuts and chocolate served to go in this functional",
@@ -17,7 +17,7 @@ const Giftp=[
         price:500,
     }, 
     {
-        id:2,
+        id:14,
         image:q2,
         title:"Choco sweety",
         des:"Gift who are on-the-go delightful way to deliver seven favorite delectable",
@@ -25,7 +25,7 @@ const Giftp=[
         price:400,
     }, 
     {
-        id:3,
+        id:15,
         image:q3,
         title:"Large  Gift Basket",
         des:"Want to send a tray that will be amply filled with the best and large of treats",
@@ -33,7 +33,7 @@ const Giftp=[
         price:650,
     },  
     {
-        id:4,
+        id:16,
         image:q4,
         title:"Leather Pretzel  Tray",
         des:"Deliver a smorgasbord of candy, nuts and chocolate served to go in this functional",
@@ -41,7 +41,7 @@ const Giftp=[
         price:800,
     }, 
     {
-        id:5,
+        id:17,
         image:cho1,
         title:"Wooden Chocolate ",
         des:" Dried fruits and premium truffles and chocolates",
@@ -49,7 +49,7 @@ const Giftp=[
         price:800,
     }, 
     {
-        id:6,
+        id:18,
         image:cho2,
         title:"RSVP Martini Gift",
         des:"Exquisite arrangement takes gift to next level",
@@ -57,7 +57,7 @@ const Giftp=[
         price:800,
     }, 
     {
-        id:7,
+        id:19,
         image:cho3,
         title:"Medium Platter",
         des:" A beaded, mirrored tray with 4 martini cupsl",
@@ -65,7 +65,7 @@ const Giftp=[
         price:800,
     }, 
     {
-        id:8,
+        id:20,
         image:cho4,
         title:"Wooden Gourmet Nuts",
         des:" Each cup is filled with a different delectable treat. ",

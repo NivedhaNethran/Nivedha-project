@@ -39,7 +39,7 @@ const deleteCart=(item)=>{
                   <p className="card-text ef">{item.des}</p>
                   <p className="card-text nm">{item.price}</p>
                   {cartProducts.find(items=>items.id===item.id)?
-                <button className='btn btn-danger' onClick={()=>deleteCart(item)}>Remove from Cart</button>:
+                <button className='btn btn-primary' onClick={()=>deleteCart(item)}>Remove from Cart</button>:
                 <button className='btn btn-success' onClick={()=>addcart(item)}>Add to Cart</button>  
                 }
                   {/* <button className='btn btn-primary'>Add to Cart</button> */}

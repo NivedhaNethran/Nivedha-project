@@ -25,7 +25,7 @@ const Gifts = () => {
     <>
 <section className='bgc'>
 <div className="container in">
-    <div className="row">
+    <div className="row low">
       {Giftp.map((item)=>(
         <div className="col-lg-3 cd">
             <div className="card" key={item.id}>

@@ -14,7 +14,7 @@ const Home = () => {
     <div className="pic"><img src={hersheypic}alt=""/></div>
 
 <div className=" sen">Make More Moment of Goodness</div>
-<div className ="sen1"> Welcome elcome to Hersheyland, your go-to dessert destination for tasty recipes, 
+<div className ="sen1"> Welcome to Hersheyland, your go-to dessert destination for tasty recipes, 
   celebration ideas and family activities. Find a special treat to bake with your kiddos. 
   Plan an awesome party. Re-discover your favorite Hershey brands. 
   Hersheyland is full of ways to make life a little sweeter!</div>

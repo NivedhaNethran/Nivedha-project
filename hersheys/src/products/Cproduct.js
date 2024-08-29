@@ -14,7 +14,7 @@ const Cproduct=[
         price:1200
     },
     {
-        id:2,
+        id:10,
         image:cake2,
         title:"Bluebery Cake",
         des:"Ideal for all occasions specially for fruit lovers A bonanza for those who like fruits.",
@@ -22,7 +22,7 @@ const Cproduct=[
         price:1500
     },
     {
-        id:3,
+        id:11,
         image:cake3,
         title:"Red Forest Cake",
         des:"The Red Forest Cake is a decadent eggless celebration masterpiece.",
@@ -30,7 +30,7 @@ const Cproduct=[
         price:3000
     },
     {
-        id:4,
+        id:12,
         image:cake4,
         title:"Rasamalai Cake",
         des:"sweet and indulgent treat, the Rasmalai Cake is a luxurious fusion.",

@@ -22,6 +22,7 @@ const Cartslice=createSlice(
                             price:newItem.price,
                             quantity:newItem.quantity
                         });
+                
             localStorage.setItem("cartItems",JSON.stringify(state.cartItems))
                     }
             
@@ -30,8 +31,17 @@ const Cartslice=createSlice(
                 state.cartItems=state.cartItems.filter((items)=>items.id!==action.payload.id)
                 localStorage.setItem("cartItems",JSON.stringify(state.cartItems));
             },
+        updateQuantity:(state,action)=>{
+            const{id,quantity}=action.payload
+            const itemToUpdate=state.cartItems.find((items)=>items.id===id)
+            if(itemToUpdate){
+                itemToUpdate.quantity=quantity
+
+            };
+            localStorage.setItem("cartItems",JSON.stringify(state.cartItems))
+        }
         }
     }
     )
 export default Cartslice.reducer;
-export const {addToCart,deleteFromCart}=Cartslice.actions
+export const {addToCart,deleteFromCart,updateQuantity}=Cartslice.actions
