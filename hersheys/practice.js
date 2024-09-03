@@ -1,9 +1,9 @@
-// let marks=25;
+// let marks=15;
 // if(marks>=35){
 //     console.log("You had passed this paper");
 // }
 // if(marks<=35){
-//     console.log("Better luck next work hard")
+//     console.log("Better luck next time work hard")
 // }
 
 
@@ -82,7 +82,7 @@
 //     return a-b;
 // }
 // console.log(numbers.sort(compare));
-let numbers=[1,2,3,4,5,6,7,8,9,10];
-let evenNumbers=numbers.filter(number=>number%2===0);
-console.log(evenNumbers);
+// let numbers=[1,2,3,4,5,6,7,8,9,10];
+// let evenNumbers=numbers.filter(number=>number%2===0);
+// console.log(evenNumbers);
 
