@@ -13,7 +13,7 @@ app.get("/",(req,res)=>{
 
 
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = "mongodb+srv://nivedhacse08:Nethran31@cluster0.9e7dg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -29,6 +29,40 @@ async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
+    const prodcollect=client.db("hersheys").collection("Chocalte")
+    app.post("/product",async(req,res)=>{
+      const data = req.body;
+      const result = await prodcollect.insertOne(data);
+      res.send(result);
+    });
+    app.get("/allproducts",async(req,res)=>{
+    const Chocalte=prodcollect.find();
+    const result=await Chocalte.toArray();
+    res.send(result);
+    });
+    app.get("/product/:id",async(req,res)=>{
+    const id=req.params.id;
+    const filter={_id:new ObjectId(id)};
+    const result=await prodcollect.findOne(filter);
+    res.send(result);
+    });
+    app.patch("/product/:id",async(req,res)=>{
+    const id=req.params.id;
+    const filter={_id:new ObjectId(id)};
+    const update=req.body;
+    const updateDoc={$set:{...update}};
+    const option={upsert:true};
+    const result=await prodcollect.updateOne(filter,updateDoc,option);
+    res.send(result);
+    });
+    app.delete("/product/:id",async(req,res)=>{
+    const id= req.params.id;
+    const filter={_id:new ObjectId(id)};
+    const result=await prodcollect.deleteOne(filter);
+    res.status(200)
+    .json({success:true,message:"data deleted successfully",result})
+    });
+
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
