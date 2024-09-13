@@ -6,3 +6,17 @@
 {
   margin-bottom: 30px;
 }
+.up input{
+  width: 350px;
+}
+.car {
+margin-left: 300px;
+margin-top: 30px;
+
+}
+.up label{
+  font-size: 20px;
+}
+.up{
+  padding: 30px 30px 50px 30px;
+}

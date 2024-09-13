@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import truffle from '../images/truffle.jpg'
+import cake1 from '../images/cake1.webp'
 import { Link } from 'react-router-dom'
 
 const Update = () => {
@@ -33,9 +33,9 @@ const Update = () => {
     <div class="col-md-8">
       <div class="card-body">
         <h5 class="card-title">{item.title}</h5>
-        <p class="card-text">desc{item.des}</p>
+        <p class="card-text">{item.des}</p>
         <p class="card-text">Rs:{item.price}</p>
-        <Link to='/edit'> <button className='btn btn-warning'>Edit</button></Link> 
+        <Link to={`/edit/${item._id}`} className='btn btn-warning'>Edit</Link> 
        <button className='btn btn-danger'onClick={()=>{deleteProduct(item._id)}}>Delete</button>
       </div>
     </div>
