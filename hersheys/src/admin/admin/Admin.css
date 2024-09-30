@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+/* .add
+{
+    padding: 20px 30px 20px 30px;
+} */
+.cl
+{
+  margin-bottom: 30px;
+}
+.up input{
+  width: 350px;
+}
+.car {
+margin-left: 300px;
+margin-top: 30px;
+
+}
+.up label{
+  font-size: 20px;
+}
+.up{
+  padding: 30px 30px 50px 30px;
+}
+.abc ul li{
+  list-style: none;
+  display: inline;
+  padding-left: 80px;
+  
+}
+.add{
+  background-color:bisque;
+  font-size: 20px;
+  color:blueviolet;
+  font-family: "Sofadi One", system-ui;
+}
+.lin{
+  text-decoration: none;
+  color: brown;
+}
